@@ -43,8 +43,6 @@ JWT_SECRET=supersecretkey
 PORT=3000
 ```
 
-Adjust `MONGO_URI` and `PORT` as needed for your environment.
-
 3. **Run the server**
 
 ```bash
