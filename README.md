@@ -88,3 +88,20 @@ The app will start on `http://localhost:3000` (or your configured `PORT`).
 - Reviews currently support ratings **1–5** (validated at schema level).
 - Make sure MongoDB is running before starting the server.
 
+<img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 21 59 28" src="https://github.com/user-attachments/assets/af883614-ba09-483c-bb42-e9cf702ece3d" />
+<img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 21 59 43" src="https://github.com/user-attachments/assets/33e4955f-be0c-48cb-8cad-39b6def5adbc" />
+<img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 22 02 39" src="https://github.com/user-attachments/assets/833d0e41-5a3c-4b0f-8613-a7fe420b262a" />
+<img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 22 02 45" src="https://github.com/user-attachments/assets/fc1819a9-e200-471d-adc0-f931f446b326" />
+<img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 22 02 58" src="https://github.com/user-attachments/assets/93fc435b-05ed-4e6b-9727-e5908b07cd8f" />
+<img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 22 03 03" src="https://github.com/user-attachments/assets/c84129d8-5794-4b9b-878b-c6fcc2bad313" />
+<img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 22 04 05" src="https://github.com/user-attachments/assets/47195670-4ade-4fbd-bf14-121f89d15fbf" />
+<img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 22 04 46" src="https://github.com/user-attachments/assets/48ea57cb-8c26-4840-85ad-a5ccd0d00807" />
+<img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 22 04 52" src="https://github.com/user-attachments/assets/5ef44fda-22c8-4c7b-9aa1-4036e5e96360" />
+
+
+
+
+
+
+
+
