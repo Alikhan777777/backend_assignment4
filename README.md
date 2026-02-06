@@ -99,47 +99,36 @@ The app will start on `http://localhost:3000` (or your configured `PORT`).
 <img width="1440" height="900" alt="Снимок экрана 2026-02-06 в 22 04 52" src="https://github.com/user-attachments/assets/5ef44fda-22c8-4c7b-9aa1-4036e5e96360" />
 
 
-System Architecture & Logic
-This application is a comprehensive Book Management System designed with a focus on data integrity and role-specific workflows. It bridges the gap between administrative inventory management and user-driven community feedback.
+Features
+Authentication & Roles
 
-Authentication & Role Management
-The system employs a secure authentication flow that determines the user's workspace based on their assigned role:
+Secure Flow: Integrated registration and login system with persistent session handling.
 
-Registration & Login: Users are authenticated via email and password. Upon registration, a role must be specified (User or Administrator).
+Role-Based Access Control (RBAC): Roles are defined as Администратор (admin) and Пользователь (user) within the User model.
 
-Role-Based Access Control (RBAC): * The Administrator role unlocks the "Management Suite," allowing for inventory control.
+Dynamic UI: The interface conditionally renders components; admins see management tools (sidebar forms and action buttons), while users see a streamlined viewing and reviewing interface.
 
-The User role provides a "Reader's View," focusing on consumption and interaction without the risk of accidental data deletion.
+Books (CRUD Logic)
 
- CRUD Logic
-The application implements full CRUD (Create, Read, Update, Delete) operations across its primary entities:
+Create: Admins can populate the library via a dedicated "Добавить книгу" sidebar.
 
-Books (Admin Only):
+Read: A global "Список книг" is accessible to all authenticated users, displaying title, author, and price.
 
-Create: Admins can add new books through a dedicated sidebar form.
+Update & Delete: Admins have exclusive access to Редактировать (Edit) and Удалить (Delete) buttons to manage the inventory in real-time.
 
-Read: Both roles can view the global list of books.
+Reviews & Ratings
 
-Update/Delete: Admins have exclusive access to modify book details or remove them from the database entirely.
+Interactive Feedback: Any authenticated user can submit a detailed text review paired with a numerical 1–5 rating.
 
-Reviews (Collaborative):
+Data Linking: Each review is programmatically linked to both the specific book and the author's email for accountability.
 
-Create: Users and Admins can post reviews consisting of a comment and a numerical rating.
+Real-time Display: Reviews are nested directly within book cards, allowing for immediate community feedback.
 
-Read: Reviews are nested within each book card for immediate visibility.
+Form Validations
 
- Data Validations
-To ensure the database remains clean and reliable, the application enforces several layers of validation:
+Input Integrity: Client-side checks ensure that book details (title, author, price) and review fields are not submitted empty.
 
-Input Constraints: The "Add Book" and "Review" forms require all fields (Title, Author, Price, Comment) to be populated before submission.
+Visual Feedback: Utilizing browser alerts (e.g., "Готово! Теперь входи") and state-driven notifications to confirm successful database operations.
 
-Type Safety: Price inputs are restricted to numerical values, and ratings are limited to a fixed scale of 1 to 5.
-
-Identity Validation: The system tracks the email of the reviewer, ensuring that every piece of feedback is tied to a verified account.
-
-UI Feedback: Standard browser alerts (e.g., "Готово! Теперь входи.") and state-driven UI changes provide immediate confirmation of successful actions.
-
-
-
-
+Constraint Enforcement: Prices and ratings are restricted to valid numeric ranges to maintain data consistency.
 
